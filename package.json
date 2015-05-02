@@ -1,0 +1,29 @@
+{
+    "name": "actor-http",
+    "version": "0.0.1",
+    "description": "Http micro framework made with single instance, lightweight, async and scope-full event emitter",
+    "main": "http",
+    "_nodeSupported": true,
+    "engines": {
+        "node": "*"
+    },
+    "author": "Tiago de Carvalho Miranda",
+    "repository": {
+  	    "type": "git",
+  	    "url": "https://github.com/TCMiranda/actorHttp"
+    },
+    "keywords": [
+        "http",
+  	    "event",
+  	    "eventemitter",
+  	    "emitter",
+  	    "async",
+  	    "scope",
+  	    "single"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "actor-emitter": "~0",
+        "request": "~2"
+    }
+}
