@@ -44,16 +44,6 @@ var onRequestedGet = function(cb, url) {
     request.get(url, onRequestResponse.bind(this, cb));
 }
 
-var onRequestedMake = function(cb, options) {
-
-    options = typeof cb == "function"
-        ? options : cb ;
-
-    console.log('-> ', 'request:' + url.split('://').pop());
-    request(options, onRequestResponse.bind(this, cb));
-}
-
 emitter.bind('request:get', onRequestedGet);
-emitter.bind('request:make', onRequestedMake);
 
 module.exports = emitter;
